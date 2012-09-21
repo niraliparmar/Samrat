@@ -4,25 +4,14 @@ require_once('config.php');
 	if(!$link) {
 		die('Failed to connect to server: ' . mysql_error());
 	}
-	
-	
-		$db = mysql_select_db(DB_DATABASE);
+	$db = mysql_select_db(DB_DATABASE);
 	if(!$db) {
 		die("Unable to select database");
 	}
-		$qry="SELECT * FROM user_detail";
+	$qry="SELECT * FROM user_detail";
 	$r=mysql_query($qry);
-	
-	
 	if($r) 
 	{
-		
-		
 			$member = mysql_fetch_assoc($r);
-		
-		
-			
-		
-		
 	}
 ?>

@@ -6,9 +6,9 @@
         <meta name="description" content="Fancy Sliding Form with jQuery" />
         <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-        <script type="text/javascript" src="js/app1.js"></script>
-         <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="sliding.form.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+         <script type="text/javascript" src="js/app1.js"></script>
+       	<script type="text/javascript" src="sliding.form.js"></script>
 		<link href="css/jquery-ui-1.8.16.custom.css" type="text/css" rel="stylesheet" />
 		<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
 		<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
@@ -25,37 +25,37 @@
                 <div id="steps">
              
              		<!--Form for Add new user-->    
-                    <div id="adduser" class="adduser">      
-                    <fieldset class="fieldset step">
-                       <form id="formElem1" name="formElem1" method="post" action="add_user.php" >
-                        <legend class="legend">Add new User</legend>
-                        
-                        <p>
-                            <label for="firstname">First name</label>
-                            <input id="firstname" name="firstname" />
-                        </p>
-                        <p>
-                            <label for="lastname">Last name</label>
-                            <input id="lastname" name="lastname" />
-                        </p>
-                        <p>
-                            <label for="Address">Address</label>
-                            <input id="address" name="address" type="text"/>
-                        </p>
-                        <p>
-                            <label for="DOB">Date of Birth</label>
-                            <input id="dob" name="dob" type="text"/>
-                        </p>
-                        <p>
-                            <label for="contact_no">Contact Number</label>
-                            <input id="contact_no" name="contact_no" type="text"   />
-                        </p>
-                        <p class="submit">
-                        	<button id="registerButton" type="submit" name="add_user">Add User</button>
-                        </p>
-                    </form>
-                    </fieldset>
-                    </div>
+                    <div id="adduser">
+                     <fieldset class="fieldset step">
+						   <form id="formElem1" name="formElem1"  method="post" onsubmit="return validateForm()" >
+                            <legend class="legend">Add new User</legend>
+							
+                            <p>
+                                <label for="firstname">First name</label>
+                                <input id="firstname" name="firstname" />
+                            </p>
+							<p>
+                                <label for="lastname">Last name</label>
+                                <input id="lastname" name="lastname" />
+                            </p>
+                           	<p>
+                                <label for="Address">Address</label>
+                                <input id="address" name="address" type="text"/>
+                            </p>
+                            <p>
+                                <label for="DOB">Date of Birth</label>
+                                <input id="dob" name="dob" type="text"/>
+                            </p>
+							<p>
+                                <label for="contact_no">Contact Number</label>
+                                <input id="contact_no" name="contact_no" type="text"   />
+                            </p>
+							<p class="submit">
+                                <button id="registerButton" type="button"  name="add_user">Add User</button>
+                            </p>
+						</form>
+                        </fieldset>
+                        </div>
 
                     
                     <!--Form for Agenda-->
